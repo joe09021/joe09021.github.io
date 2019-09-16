@@ -48,6 +48,23 @@ button:focus {
 	outline: none;
 }
 
+#rotate-area {
+  margin: 3em;
+  overflow: hidden;
+  touch-action: none;
+}
+
+#arrow {
+  width: 100%;
+  height: 100%;
+}
+
+#angle-info {
+  color: #666;
+  font-size: 2em;
+  position: absolute;
+}
+
 .hidden {
 	position: absolute;
 	overflow: hidden;
@@ -70,20 +87,6 @@ button:focus {
 	width: 100vw;
 	height: 100vh;
 }
-
-
-#scale-element {
-  display: block;
-  max-width: 100%;
-  margin: auto;
-  touch-action: none;
-}
-
-#scale-element.reset {
-  transition: -webkit-transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-}
-
 
 /* Header */
 
