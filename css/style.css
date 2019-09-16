@@ -408,6 +408,22 @@ button:focus {
 	opacity: 0;
 }
 
+
+
+#scale-element {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+  touch-action: none;
+}
+
+#scale-element.reset {
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
 /* Box button */
 .boxbutton {
 	font-size: 2em;
