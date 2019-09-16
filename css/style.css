@@ -71,6 +71,20 @@ button:focus {
 	height: 100vh;
 }
 
+
+#scale-element {
+  display: block;
+  max-width: 100%;
+  margin: auto;
+  touch-action: none;
+}
+
+#scale-element.reset {
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+
 /* Header */
 
 .codrops-header {
@@ -407,22 +421,6 @@ button:focus {
 	pointer-events: none;
 	opacity: 0;
 }
-
-
-
-#scale-element {
-  display: block;
-  max-width: 100%;
-  margin: auto;
-  touch-action: none;
-}
-
-#scale-element.reset {
-  transition: -webkit-transform 0.3s ease-in-out;
-  transition: transform 0.3s ease-in-out;
-}
-
-
 
 /* Box button */
 .boxbutton {
