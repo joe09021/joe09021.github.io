@@ -12,6 +12,7 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<script src="js/modernizr-custom.js"></script>
+		<script src="js/pinch.js"></script>
 	</head>
 	<body>
 		<svg class="hidden">
@@ -212,8 +213,8 @@
 				</symbol>
 			</defs>
 		</svg>
-		<div class="container">
-			<div class="main">
+		<div class="container" id="gesture-area" >
+			<div class="main" id="scale-element" >
 				<header class="codrops-header">
 					<div class="codrops-links">
 						<a class="codrops-icon codrops-icon--prev" href="http://tympanus.net/Tutorials/AnimatedAnimals/" title="Previous Demo"><span>Previous Demo</span></a>
@@ -226,7 +227,7 @@
 						<img class="surroundings__map" src="img/surroundings.svg" alt="Surroundings"/>
 					</div>
 					<div class="levels">
-						<div id="gesture-area" class="level level--1" aria-label="Level 1">
+						<div class="level level--1" aria-label="Level 1">
 							<svg class="map map--1" viewBox="0 0 1200 800" width="100%" height="100%" preserveAspectRatio="xMidYMid meet">
 								<title>Map Level 1</title>
 								<polygon points="1035.94 787.41 1035.94 423.16 855.37 423.16 855.37 350.52 1187.28 350.52 1187.28 12.59 548.09 12.59 548.09 68.87 437.36 68.87 437.36 12.59 49.37 12.59 49.37 366.5 12.72 366.5 12.72 787.41 356.2 787.41 414.93 584.41 554.4 584.41 627.81 787.41 1035.94 787.41" class="map__ground" />
@@ -271,7 +272,7 @@
 								<polygon points="410.01 601.42 358.8 778.44 320.06 767.07 372.92 591.6 410.01 601.42" class="map__space" />
 								<polygon points="561.3,603.9 624,777 661.9,763.2 597.7,591.5" class="map__space" />
 							</svg>
-							<div id="scale-element" class="level__pins">
+							<div class="level__pins">
 								<a class="pin pin--1-1" data-category="1" data-space="1.01" href="#" aria-label="Pin for Apple Heart">
 									<span class="pin__icon">
 										<svg class="icon icon--pin"><use xlink:href="#icon-pin"></use></svg>
@@ -924,5 +925,4 @@
 		<script src="js/classie.js"></script>
 		<script src="js/list.min.js"></script>
 		<script src="js/main.js"></script>
-		<script src="js/pinch.js"></script>
 	</body>
